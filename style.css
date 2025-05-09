@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f0f2f5;
+  position: sticky;
+}
+
+/* Header */
+header {
+  background: #fff;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+}
+
+header .left,
+header .center,
+header .right {
+  display: flex;
+  align-items: center;
+}
+
+.center{
+  gap:50px;
+  margin-left: -200px;
+}
+
+.right {
+  gap: 20px;
+}
+
+.right img{
+  border-radius: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1877f2;
+  margin-right: 15px;
+}
+
+.search {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+header i {
+  margin: 0 8px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #555;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+/* Sidebar Left */
+.sidebar-left {
+  width: 20%;
+  padding: 10px;
+  background: #fff;
+  height: auto;
+  border-radius: 10px;
+  position: sticky;
+}
+
+.sidebar-left img{
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+}
+
+.sidebar-left ul {
+  list-style: none;
+}
+
+.sidebar-left li {
+  padding: 10px 0;
+  color: #333;
+  font-size: 20px;
+}
+
+.sidebar-left li i {
+  margin-right: 10px;
+}
+
+/* Main Feed */
+main {
+  width: 60%;
+  padding: 0 20px;
+}
+
+.stories {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.story {
+  width: 120px;
+  height: 180px;
+  background: #ccc;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-post {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.create-post input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.post {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.post img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Sidebar Right */
+.sidebar-right {
+  width: 20%;
+  background: #fff;
+  padding: 15px;
+  height: auto;
+  border-radius: 10px;
+  position: sticky;
+}
+
+.sidebar-right h4 {
+  margin-bottom: 10px;
+}
+
+.sidebar-right ul {
+  list-style: none;
+}
+
+.sidebar-right li {
+  padding: 8px 0;
+  color: #333;
+}
+
+.online {
+  font-size: 10px;
+  color: green;
+  margin-right: 8px;
+}
